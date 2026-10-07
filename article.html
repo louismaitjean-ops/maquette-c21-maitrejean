@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Article · CENTURY 21 Maitrejean Immobilier</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0f3324">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#174a35; --green-d:#0f3324; --green-dd:#0a2419; --green-l:#2c6a4e;
+  --gold:#c9a45c; --gold-deep:#a3843f; --gold-l:#e8d2a0; --gold-soft:#f1e5c8;
+  --cream:#f7f3ea; --stone:#efe8d9; --paper:#fbf8f1; --line:#e3dac8;
+  --ink:#14231b; --muted:#5d6a62;
+  --serif:"Libre Caslon Text", Georgia, serif; --sans:"Source Sans 3", system-ui, sans-serif;
+  --r:6px; --wrap:1240px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 32px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.015em;line-height:1.2}
+.eyebrow{font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;color:var(--gold-deep)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:4px;font-weight:600;font-size:15px;border:1px solid transparent;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn-gold{background:var(--gold);color:var(--green-dd)}.btn-gold:hover{background:var(--gold-l)}
+.btn-dark{background:var(--green);color:#fff}.btn-dark:hover{background:var(--green-l)}
+.btn-line{border-color:var(--line);background:#fff}.btn-line:hover{border-color:var(--green)}
+
+/* header */
+.top{position:sticky;top:0;z-index:50;background:rgba(251,248,241,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
+.logo{display:flex;align-items:center;gap:13px;line-height:1}
+.logo .seal{width:42px;height:42px;color:var(--green)}
+.logo .wm{display:block;width:142px;height:17px}
+.logo small{display:block;font-size:14px;font-weight:600;margin-top:6px;color:var(--gold-deep)}
+nav.main{display:flex;gap:28px;font-size:15px;font-weight:600}
+nav.main a:hover{color:var(--gold-deep)}
+.tel{font-weight:700;font-size:15px;white-space:nowrap}
+
+/* title */
+.crumbs{font-size:14px;color:var(--muted);padding:26px 0 18px;display:flex;gap:8px;flex-wrap:wrap}
+.crumbs a:hover{color:var(--green);text-decoration:underline}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;padding-bottom:26px;flex-wrap:wrap}
+.head h1{font-size:clamp(30px,3.4vw,44px)}
+.head .meta{color:var(--muted);margin-top:6px;font-size:17px}
+.head .meta b{color:var(--ink);font-weight:600}
+.head .price{text-align:right}
+.head .price b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(30px,3.4vw,42px);color:var(--green);line-height:1.1}
+.head .price span{font-size:14px;color:var(--muted)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:8px;border-radius:10px;overflow:hidden;position:relative}
+.gallery button{border:0;padding:0;cursor:zoom-in;overflow:hidden;background:#ddd;position:relative}
+.gallery button:first-child{grid-row:1/3}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.gallery button:hover img{transform:scale(1.04)}
+.gallery .all{position:absolute;right:16px;bottom:16px;background:#fff;border-radius:4px;padding:10px 16px;font-weight:600;font-size:14px;border:0;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.18)}
+.tag{position:absolute;left:16px;top:16px;z-index:2;background:var(--green);color:var(--gold-l);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:7px 12px;border-radius:3px}
+
+/* layout */
+.main-grid{display:grid;grid-template-columns:1fr 380px;gap:60px;padding:50px 0 90px;align-items:start}
+.block{padding:36px 0;border-top:1px solid var(--line)}
+.block:first-child{border-top:0;padding-top:0}
+.block h2{font-size:28px;margin-bottom:20px}
+.keyfacts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:var(--r);background:#fff;margin-bottom:36px}
+.keyfacts div{padding:18px 20px;font-size:14px;color:var(--muted)}
+.keyfacts div+div{border-left:1px solid var(--line)}
+.keyfacts b{display:block;font-family:var(--serif);font-weight:400;font-size:24px;color:var(--ink);line-height:1.2}
+.desc .lead{font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:14px;color:var(--gold-deep);margin-bottom:14px}
+.desc p{margin-bottom:14px;color:#2f3b34;max-width:68ch}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.specs div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
+.specs div span{color:var(--muted)}
+.specs div b{font-weight:600;text-align:right}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.chips span{background:var(--gold-soft);color:#5d4a1f;font-weight:600;font-size:14px;padding:7px 14px;border-radius:3px}
+.list{list-style:none;columns:2;column-gap:40px}
+.list li{padding:8px 0 8px 22px;position:relative;break-inside:avoid;font-size:16px}
+.list li::before{content:"";position:absolute;left:2px;top:17px;width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.list li span{color:var(--muted)}
+
+/* DPE */
+.dpe{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.scale h3{font-size:18px;font-family:var(--sans);font-weight:700;margin-bottom:4px}
+.scale small{color:var(--muted);font-size:13px;display:block;margin-bottom:14px}
+.scale .row{display:flex;align-items:center;gap:10px;margin-bottom:5px}
+.scale .bar{height:26px;display:flex;align-items:center;padding-left:10px;color:#fff;font-weight:700;font-size:14px;border-radius:0 13px 13px 0;transition:transform .3s}
+.scale .row.on .bar{height:34px;box-shadow:0 0 0 2px var(--ink)}
+.scale .val{font-size:14px;font-weight:700;white-space:nowrap}
+.dpe-note{margin-top:22px;font-size:14px;color:var(--muted)}
+
+/* side */
+.side{position:sticky;top:100px;display:grid;gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px}
+.card h3{font-size:22px;margin-bottom:6px}
+.card p.s{color:var(--muted);font-size:15px;margin-bottom:18px}
+.fld{display:block;margin-bottom:12px}
+.fld span{display:block;font-size:13px;font-weight:600;color:var(--muted);margin-bottom:4px}
+.fld input,.fld select,.fld textarea{width:100%;border:1px solid var(--line);border-radius:4px;padding:11px 12px;background:var(--paper);outline:none;font-size:16px}
+.fld input:focus,.fld textarea:focus{border-color:var(--green)}
+.card .btn{width:100%}
+.card .ok{display:none;background:var(--gold-soft);padding:14px;border-radius:4px;font-size:15px;margin-top:12px}
+.agency{background:var(--green-d);color:#fff;border-color:var(--green-d)}
+.agency .seal{width:40px;height:40px;color:var(--gold);margin-bottom:14px}
+.agency p{color:#cfdcd3;font-size:15px}
+.agency a.big{display:block;font-family:var(--serif);font-size:28px;color:var(--gold);margin:12px 0 4px}
+.calc .res{font-family:var(--serif);font-size:30px;color:var(--green);margin-top:6px}
+.calc .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.calc small{color:var(--muted);font-size:13px}
+.src{font-size:13px;color:var(--muted);text-align:center}
+.src a{text-decoration:underline}
+
+/* others */
+.others{background:var(--stone);padding:80px 0}
+.others h2{font-size:32px;margin-bottom:30px}
+.o-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.o-card{background:var(--paper);border-radius:var(--r);overflow:hidden;transition:transform .4s,box-shadow .4s}
+.o-card:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px rgba(15,51,36,.45)}
+.o-card img{aspect-ratio:4/3;width:100%;object-fit:cover}
+.o-card div{padding:20px 22px}
+.o-card small{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
+.o-card h3{font-size:21px;margin:6px 0 10px}
+.o-card b{font-family:var(--serif);font-weight:400;font-size:24px;color:var(--green)}
+
+footer.site{background:var(--green-dd);color:#9fb2a6;font-size:14px;padding:10px 0 34px}
+footer.site .fw{display:block}
+footer.site .fb{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:24px}
+.f-social{display:flex;justify-content:space-between;gap:30px 60px;flex-wrap:wrap;padding:34px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.f-social h5{color:#fff;font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px}
+.soc{display:flex;flex-wrap:wrap;gap:10px}
+.soc a{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 14px;border:1px solid rgba(255,255,255,.16);border-radius:4px;color:#e6eee8;font-weight:600;font-size:14px;transition:background .25s,border-color .25s,color .25s}
+.soc a svg{width:18px;height:18px;flex:none}
+.soc a:hover{background:var(--gold);border-color:var(--gold);color:var(--green-dd)}
+
+footer.site a:hover{color:var(--gold)}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(8,20,14,.96);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:92vw;max-height:84vh;object-fit:contain;border-radius:4px;user-select:none}
+.lb button{position:absolute;background:rgba(255,255,255,.1);border:0;color:#fff;width:52px;height:52px;border-radius:50%;cursor:pointer;font-size:24px;display:grid;place-items:center}
+.lb button:hover{background:rgba(255,255,255,.2)}
+.lb .prev{left:24px;top:50%;margin-top:-26px}.lb .next{right:24px;top:50%;margin-top:-26px}
+.lb .x{right:24px;top:24px}
+.lb .count{position:absolute;bottom:24px;left:0;right:0;text-align:center;color:#cfdcd3;font-size:15px}
+.notfound{padding:120px 0;text-align:center}
+
+@media (max-width:1000px){
+  nav.main{display:none}
+  .main-grid{grid-template-columns:1fr;gap:20px}
+  .side{position:static}
+}
+@media (max-width:760px){
+  .wrap{padding:0 20px}
+  .top .wrap{height:66px}
+  .logo .seal{width:36px;height:36px}.logo .wm{width:120px;height:14px}
+  .head .price{text-align:left}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:240px 110px}
+  .gallery button:first-child{grid-column:1/3;grid-row:1}
+  .gallery button:nth-child(n+4){display:none}
+  .keyfacts{grid-template-columns:1fr 1fr}
+  .keyfacts div:nth-child(3){border-left:0}
+  .keyfacts div:nth-child(n+3){border-top:1px solid var(--line)}
+  .specs,.dpe{grid-template-columns:1fr;gap:0 0}
+  .dpe{gap:30px}
+  .list{columns:1}
+  .o-grid{grid-template-columns:1fr}
+  .lb .prev,.lb .next{top:auto;bottom:14px;margin:0}
+  .lb .count{bottom:30px}
+}
+/* actus */
+.a-hero{background:var(--green-d);color:#fff;padding:70px 0 60px}
+.a-hero h1{font-size:clamp(32px,4vw,52px)}
+.a-hero p{color:#cfdcd3;max-width:560px;margin-top:12px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:40px 0 30px}
+.filters button{border:1px solid var(--line);background:#fff;padding:9px 16px;border-radius:4px;font-weight:600;font-size:15px;cursor:pointer}
+.filters button.on,.filters button:hover{background:var(--green);color:#fff;border-color:var(--green)}
+.a-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-bottom:90px}
+.a-card{background:#fff;border:1px solid var(--line);border-top:3px solid var(--green);border-radius:var(--r);padding:26px 26px 22px;display:flex;flex-direction:column;gap:10px;transition:transform .35s,box-shadow .35s}
+.a-card:hover{transform:translateY(-5px);box-shadow:0 26px 44px -28px rgba(15,51,36,.45)}
+.a-card .m{display:flex;justify-content:space-between;font-size:13px;color:var(--muted)}
+.a-card .m b{color:var(--gold-deep);letter-spacing:.08em;text-transform:uppercase;font-size:12px}
+.a-card h2{font-size:22px;line-height:1.3}
+.a-card p{color:var(--muted);font-size:15.5px;flex:1}
+.a-card span.go{font-weight:600;color:var(--green)}
+.art{max-width:760px;margin:0 auto;padding:50px 0 90px}
+.art .m{color:var(--muted);font-size:15px;margin:14px 0 34px;display:flex;gap:14px;flex-wrap:wrap}
+.art .m b{color:var(--gold-deep);text-transform:uppercase;letter-spacing:.08em;font-size:13px}
+.art h1{font-size:clamp(30px,3.6vw,46px)}
+.art .body p,.art .body li{font-size:18px;line-height:1.75;color:#26332b;margin-bottom:18px}
+.art .body li{margin-left:22px}
+.art .body h3{font-size:26px;margin:38px 0 14px}
+.art .body blockquote{border-left:3px solid var(--gold);padding-left:18px;font-family:var(--serif);font-size:20px;margin:24px 0}
+.art .author{font-style:italic;color:var(--muted)}
+.art figure{margin:30px 0;background:var(--stone);border-radius:var(--r);padding:16px;text-align:center}
+.art figure img{max-height:480px;margin:0 auto;object-fit:contain;border-radius:4px}
+.art .cta{margin-top:44px;background:var(--gold-soft);border-radius:10px;padding:28px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.art .cta h3{font-size:24px}
+.art .src{text-align:left;margin-top:26px}
+@media (max-width:900px){.a-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.a-grid{grid-template-columns:1fr}.art{padding:34px 0 70px}.art .body p,.art .body li{font-size:17px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="c21-word" viewBox="0 0 170 20"><path fill="currentColor" fill-rule="evenodd" d="M91.465 11.28a4.244 4.244 0 01-8.488 0V0h-3.656v11.28a7.9 7.9 0 0015.8 0V0h-3.656v11.28zM5.53 5.277a5.91 5.91 0 018.116.016l2.099-3.025a9.578 9.578 0 10.02 14.675l-2.098-3.04A5.929 5.929 0 115.53 5.277zM50.913 12.885L41.978 0h-3.657v19.182h3.657V6.295l8.935 12.887h3.657V0h-3.657zM59.446 3.657h5.663v15.525h3.657V3.657h5.663V0H59.446zM160.472 3.657h1.99v15.525h3.673V0h-5.663zM20.653 19.182h12.776v-3.658H24.31v-4.105h7.33V7.762h-7.33V3.657h9.12V0H20.653zM108.3 0h-8.286v19.182h3.657v-6.297h2.345l4.364 6.295h4.352l-4.552-6.59a6.455 6.455 0 004.552-6.156h.015A6.464 6.464 0 00108.3 0zm0 9.212h-4.63V3.657h4.63a2.778 2.778 0 010 5.556v-.001zM126.138 7.762L120.765 0H116.4l7.9 11.404v7.778h3.658v-7.778L135.855 0h-4.351zM155.286 9.583l.091-.14a6.06 6.06 0 10-11.09-3.378v.231h3.672c0-.077-.015-.154-.015-.231a2.394 2.394 0 012.391-2.392 2.323 2.323 0 012.408 2.392 4.972 4.972 0 01-.772 1.867c-.201.308-7.793 11.249-7.793 11.249h12.592v-3.657h-5.602l4.118-5.941zM169.637 17.823a.818.818 0 00-.323-.324.953.953 0 00-.91 0 .818.818 0 00-.323.324.984.984 0 000 .925.818.818 0 00.324.324.953.953 0 00.909 0 .818.818 0 00.323-.324.984.984 0 000-.925z"/></symbol>
+  <symbol id="c21-seal" viewBox="0 0 100 100"><path d="M85.1 26.1A43 43 0 1 0 85.1 73.9" fill="none" stroke="currentColor" stroke-width="6.4"/><path fill="currentColor" transform="translate(51 50) scale(2.15) translate(-155.2 -9.6)" d="M155.286 9.583l.091-.14a6.06 6.06 0 10-11.09-3.378v.231h3.672c0-.077-.015-.154-.015-.231a2.394 2.394 0 012.391-2.392 2.323 2.323 0 012.408 2.392 4.972 4.972 0 01-.772 1.867c-.201.308-7.793 11.249-7.793 11.249h12.592v-3.657h-5.602l4.118-5.941zM160.472 3.657h1.99v15.525h3.673V0h-5.663z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a href="index.html" class="logo" aria-label="Retour à l'accueil">
+      <svg class="seal"><use href="#c21-seal"/></svg>
+      <span><svg class="wm" viewBox="0 0 170 20"><use href="#c21-word"/></svg><small>Maitrejean Immobilier</small></span>
+    </a>
+    <nav class="main">
+      <a href="index.html#biens">Acheter</a><a href="index.html#biens">Louer</a><a href="index.html#estimation">Vendre</a><a href="viager.html">Viager</a><a href="index.html#agence">L'agence</a><a href="actus.html">Actualités</a>
+    </nav>
+    <a class="tel" href="tel:+33237992121">02 37 99 21 21</a>
+  </div>
+</header>
+
+<main id="app"></main>
+<main class="wrap" id="app"></main>
+<section class="others" id="more" style="display:none"><div class="wrap"><h2>À lire aussi</h2><div class="a-grid" id="moreGrid" style="padding-bottom:0"></div><p style="margin-top:30px"><a class="btn btn-dark" href="actus.html">Toutes les actualités</a></p></div></section>
+
+<footer class="site"><div class="wrap fw"><div class="f-social">  <div><h5>L'agence sur les réseaux</h5><div class="soc soc-ag"><a href="https://www.facebook.com/Century21.maitrejean/" target="_blank" rel="noopener" aria-label="Facebook de CENTURY 21 Maitrejean Immobilier" title="Facebook de CENTURY 21 Maitrejean Immobilier"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4a21 21 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.1H7.6v3h2.6V21z"/></svg><span>Facebook</span></a><a href="https://www.instagram.com/century21maitrejeanimmobilier/" target="_blank" rel="noopener" aria-label="Instagram de CENTURY 21 Maitrejean Immobilier" title="Instagram de CENTURY 21 Maitrejean Immobilier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>Instagram</span></a></div></div>  <div><h5>Le réseau CENTURY 21</h5><div class="soc"><a href="https://www.facebook.com/Century21France" target="_blank" rel="noopener" aria-label="Facebook de CENTURY 21 France" title="Facebook de CENTURY 21 France"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4a21 21 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.1H7.6v3h2.6V21z"/></svg><span>Facebook</span></a><a href="https://www.instagram.com/century21fr/" target="_blank" rel="noopener" aria-label="Instagram de CENTURY 21 France" title="Instagram de CENTURY 21 France"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>Instagram</span></a><a href="https://x.com/century21fr" target="_blank" rel="noopener" aria-label="X de CENTURY 21 France" title="X de CENTURY 21 France"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3.5h3l-6.6 7.5 7.8 9.5h-6.1l-4.8-5.8-5.5 5.8H2.6l7-7.9L2.1 3.5h6.2l4.3 5.3zm-1 15.2h1.7L7.3 5.2H5.5z"/></svg><span>X</span></a><a href="https://www.linkedin.com/company/century21fr" target="_blank" rel="noopener" aria-label="LinkedIn de CENTURY 21 France" title="LinkedIn de CENTURY 21 France"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 9h3.2v10.5H4.5zM6.1 4a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8zM9.8 9h3.1v1.5c.5-.9 1.6-1.8 3.3-1.8 3.4 0 4 2.2 4 5.1v5.7H17v-5c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7v5.1H10z"/></svg><span>LinkedIn</span></a><a href="https://www.youtube.com/user/century21france" target="_blank" rel="noopener" aria-label="YouTube de CENTURY 21 France" title="YouTube de CENTURY 21 France"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.6 2.6 0 0 0 2.4 7.2 27 27 0 0 0 2 12a27 27 0 0 0 .4 4.8 2.6 2.6 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8A27 27 0 0 0 22 12a27 27 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg><span>YouTube</span></a><a href="https://www.tiktok.com/@century21fr" target="_blank" rel="noopener" aria-label="TikTok de CENTURY 21 France" title="TikTok de CENTURY 21 France"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 3h-3.2v12.2a2.7 2.7 0 1 1-2.7-2.7c.3 0 .6 0 .8.1V9.3a6 6 0 1 0 5.1 5.9V9.1a7.6 7.6 0 0 0 4.4 1.4V7.3a4.4 4.4 0 0 1-4.4-4.3z"/></svg><span>TikTok</span></a></div></div></div><div class="fb"><span>© 2026 CENTURY 21 Maitrejean Immobilier · 14 rue Mathurin Régnier, 28000 Chartres</span><span><a href="index.html">Accueil</a> · <a href="https://www.century21-maitrejean-chartres.com/mentions_legales/" target="_blank" rel="noopener">Mentions légales</a> · <a href="https://www.century21-maitrejean-chartres.com/mentions_legales/" target="_blank" rel="noopener">Barème d'honoraires</a></span></div></div></footer>
+
+<script src="assets/js/actus-data.js"></script>
+<script>
+const A=window.ACTUS_DATA||[];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const card=a=>`<a class="a-card" href="article.html?id=${a.id}" data-cat="${esc(a.cat)}"><div class="m"><b>${esc(a.cat)}</b><span>${a.date||''}</span></div><h2>${esc(a.title)}</h2><p>${esc(a.excerpt)}</p><span class="go">Lire l'article →</span></a>`;
+const id=new URLSearchParams(location.search).get('id'), a=A.find(x=>x.id===id), app=document.getElementById('app');
+if(!a){app.innerHTML=`<div class="notfound"><h1>Article introuvable</h1><p style="margin:20px 0"><a class="btn btn-dark" href="actus.html">Voir toutes les actualités</a></p></div>`}
+else{
+  document.title=a.title+' · CENTURY 21 Maitrejean';
+  let html='',inList=false; const imgs=[...a.imgs];
+  const n=a.blocks.length, every=Math.max(3,Math.floor(n/(imgs.length+1)));
+  a.blocks.forEach(([t,x],i)=>{
+    if(t==='li'){if(!inList){html+='<ul>';inList=true}html+=`<li>${esc(x)}</li>`;return}
+    if(inList){html+='</ul>';inList=false}
+    if(t==='h')html+=`<h3>${esc(x)}</h3>`;
+    else if(t==='blockquote')html+=`<blockquote>${esc(x)}</blockquote>`;
+    else html+=`<p class="${x.startsWith('Par ')&&i>n-3?'author':''}">${esc(x)}</p>`;
+    if(imgs.length&&i>0&&i%every===0)html+=`<figure><img src="assets/img/actus/${imgs.shift()}" alt="Illustration de l'article" loading="lazy"></figure>`;
+  });
+  if(inList)html+='</ul>';
+  imgs.forEach(f=>html+=`<figure><img src="assets/img/actus/${f}" alt="Illustration de l'article" loading="lazy"></figure>`);
+  app.innerHTML=`<article class="art">
+    <nav class="crumbs" style="padding-top:0"><a href="index.html">Accueil</a>›<a href="actus.html">Actualités</a>›<span>${esc(a.cat)}</span></nav>
+    <h1>${esc(a.title)}</h1>
+    <div class="m"><b>${esc(a.cat)}</b><span>Publié le ${a.date||''}</span><span>CENTURY 21 Maitrejean Immobilier</span></div>
+    <div class="body">${html}</div>
+    <div class="cta"><div><h3>Un projet à Chartres ?</h3><p style="color:#6b5a30">L'équipe vous répond du lundi au samedi.</p></div><a class="btn btn-dark" href="tel:+33237992121">02 37 99 21 21</a></div>
+    <p class="src">Article repris du <a href="${a.src}" target="_blank" rel="noopener" style="text-decoration:underline">site actuel de l'agence</a></p>
+  </article>`;
+  const more=A.filter(x=>x.id!==a.id&&x.cat===a.cat).concat(A.filter(x=>x.id!==a.id&&x.cat!==a.cat)).slice(0,3);
+  document.getElementById('moreGrid').innerHTML=more.map(card).join(''); document.getElementById('more').style.display='';
+}
+</script>
+<!-- C21BOT, le chatbot du réseau CENTURY 21 (même intégration que sur le site actuel de l'agence) -->
+<script>
+(function(){
+  var KEY="eyJhbGciOiJIUzI1NiJ9.eyJwcm9qZWN0TmFtZSI6IkNlbnR1cnkgMjEifQ.qeXBhtz9AzVfOvt4K4Mpna98Wa7UOtoBMzXZK0b-aQ0";
+  function load(){
+    if(window.__KMBOT_UI_LOADING__||window.__KMBOT_UI_LOADED__)return;
+    window.__KMBOT_UI_LOADING__=true;
+    var s=document.createElement("script");
+    s.src="https://chat-window.kmblabs.com/KMBotUI_ULWB/kmbotui.js";s.async=true;s.referrerPolicy="strict-origin-when-cross-origin";
+    s.onload=function(){try{if(window.KMBotUI&&typeof window.KMBotUI.init==="function"){window.__KMBOT_UI_LOADED__=true;window.KMBotUI.init({projectKey:KEY})}}catch(e){}window.__KMBOT_UI_LOADING__=false};
+    s.onerror=function(){window.__KMBOT_UI_LOADING__=false};
+    document.head.appendChild(s);
+  }
+  var idle=window.requestIdleCallback||function(f){setTimeout(f,1500)};
+  if(document.readyState==="complete")idle(load,{timeout:3000});else addEventListener("load",function(){idle(load,{timeout:3000})});
+})();
+</script>
+<div id="mq-banner" role="note" style="position:fixed;left:16px;bottom:16px;z-index:2147483000;max-width:calc(100vw - 110px);background:#0a2419;color:#e8d2a0;border:1px solid rgba(232,210,160,.35);border-radius:6px;padding:9px 14px;font:600 12.5px/1.35 system-ui,sans-serif;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)">Maquette de travail Flipster · site non officiel · aucune donnée n’est envoyée</div><style>@media (max-width:640px){body:has(.mbar) #mq-banner{bottom:84px!important}}</style>
+</body>
+</html>
